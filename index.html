@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MLK BRUTAL</title> 
+    <link rel="stylesheet" href="style.css">       
+</head>
+<body>
+
+    <div class="video-container">
+        <div class="video">
+            <video src="videos/video1.mp4" muted></video>
+                <div class="wrapper-credit">
+                    <div class="left-side">LIMBO</div>
+                    <div class="right-side" style="color: #038d00;">cinematography</div>
+                </div>  
+        </div>
+        
+        <div class="video">
+            <video src="videos/video2.mp4" muted controls></video>
+        </div>
+
+        <div class="video">
+            <video src="videos/video3.mp4" muted></video>
+        </div>
+
+        <div class="video">
+            <video src="videos/video4.mp4" muted></video>
+        </div>
+
+        <div class="video">
+            <video src="videos/video5.mp4" muted></video>
+        </div>
+
+        <div class="video">
+            <video src="videos/video6.mp4" muted></video>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="box-footer">
+            <div class="logo">
+                <img src="logo-mlkbrutal-op.png" alt="logo Muleque Brutal">
+            </div>  
+                <button class="button-email">vinicius@mlkbrutal.com</button>
+                <button class="button-social"></button>
+                <p>Director, Cinematographer
+                <br>
+                São Paulo, BRASIL
+                </p>
+        </div>
+    </div>
+
+    <div class="border-top"></div>
+    
+</body>
+<script>
+    var video = document.querySelectorAll ('video')
+    video.forEach(play => play.addEventListener('click', () =>{
+        play.classList.toggle('active');
+        if (play.paused){
+            play.play();
+        }else{
+            play.pause();
+            play.currentTime = 0;
+        }
+    }));
+</script>
+</html>
