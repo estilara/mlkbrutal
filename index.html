@@ -5,35 +5,55 @@
     <title>MLK BRUTAL</title> 
     <link rel="stylesheet" href="style.css">       
 </head>
-<body>
+<body> 
 
     <div class="video-container">
         <div class="video">
             <video src="videos/video1.mp4" muted></video>
-                <div class="wrapper-credit">
+            <div class="wrapper-credit">
                     <div class="left-side">LIMBO</div>
                     <div class="right-side" style="color: #038d00;">cinematography</div>
-                </div>  
+            </div>  
         </div>
         
         <div class="video">
-            <video src="videos/video2.mp4" muted controls></video>
+            <video src="videos/video2.mp4" muted></video>
+            <div class="wrapper-credit">
+                <div class="left-side">American Airlines - Carnaval 2020</div>
+                <div class="right-side" style="color: #038d00;">- - -</div>
+        </div>
         </div>
 
         <div class="video">
             <video src="videos/video3.mp4" muted></video>
+            <div class="wrapper-credit">
+                <div class="left-side">C&A Dia dos Namorados 2019</div>
+                <div class="right-side" style="color: #038d00;">cinematography</div>
+        </div>
         </div>
 
         <div class="video">
             <video src="videos/video4.mp4" muted></video>
+            <div class="wrapper-credit">
+                <div class="left-side">Santa Lolla 2020</div>
+                <div class="right-side" style="color: #038d00;">dop & editor</div>
+        </div>
         </div>
 
         <div class="video">
             <video src="videos/video5.mp4" muted></video>
+            <div class="wrapper-credit">
+                <div class="left-side">NANDO REIS - ESPERA PRIMAVERA</div>
+                <div class="right-side" style="color: #038d00;">cinematography</div>
+        </div>
         </div>
 
         <div class="video">
             <video src="videos/video6.mp4" muted></video>
+            <div class="wrapper-credit">
+                <div class="left-side">C&A - Dia dos pais 2019</div>
+                <div class="right-side" style="color: #038d00;">cinematography</div>
+        </div>
         </div>
     </div>
 
@@ -52,19 +72,12 @@
         </div>
     </div>
 
-    <div class="border-top"></div>
+    <div class="search-bar">
+        <input type="text" name="search" value="" autocomplete="off" id="myinput" onkeyup="searchFunction()" placeholder="Search">
+    </div>   
+
+    <div class="footer"></div>
     
 </body>
-<script>
-    var video = document.querySelectorAll ('video')
-    video.forEach(play => play.addEventListener('click', () =>{
-        play.classList.toggle('active');
-        if (play.paused){
-            play.play();
-        }else{
-            play.pause();
-            play.currentTime = 0;
-        }
-    }));
-</script>
+    <script src='script.js'></script>
 </html>

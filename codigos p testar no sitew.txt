@@ -26,3 +26,137 @@ opacity: .5;
     width: 100%;
     bottom: 0px;
     right: 0;
+
+
+/* var name = "Boni";
+    name = "Boni Gattai";
+    var age = 23;
+    var leftSchool = 17;
+
+    var joined = "My name is " + name + " and I left school " + (age - leftSchool) + " years ago."; */
+    
+
+
+
+    /* var name = prompt('Hey whats ur name?');
+
+    if(name != 'Silvia') {
+
+      if(name == 'Boni') {
+        alert('So you are them...');
+      } else {
+        alert('You are not Silvia!! Retreat NOW!');
+    }} */
+
+
+
+
+
+    /* var sad = false;
+    var AmISad = sad ? 'yes ofc' : 'not actually';
+    console.log(AmISad); */
+
+
+
+
+    /* var food = 'pizza';
+
+    switch(food) {
+      case 'pizza' :
+      case 'pasta' :
+        console.log('perfection');
+      break;
+
+      case 'pastel' :
+        console.log('yesssss');
+      break;
+      
+      default:
+        console.log('i love ' + food);
+      break;
+    } */  
+    
+
+
+
+
+    /* var random = Math.ceil(Math.random() * 100);
+    
+    var name = prompt('Whats ur name??');
+    var play = confirm('wanna play ' + name + ' ?');
+
+    if(play){
+      var battle = confirm ('lets do the dragon then');
+      if(battle){
+        var result = random > 50 ? 'you won' : 'you were defeated';
+        alert(result);
+      } else {
+        alert('come back later then loser');
+      }
+    } else{
+      alert ('maybe next time');
+    } */
+
+    
+
+    /* var listItem = document.createElement('li');
+    var itemText = document.createTextNode('Uvas');
+    listItem.appendChild(itemText);
+    
+    var list = document.getElementById('list');
+    list.appendChild(listItem);
+
+    var newListItem = document.createElement('li');
+    var nexItemText = document.createTextNode('bananas');
+    newListItem.appendChild(nexItemText);
+
+    var itemToReplace = document.querySelectorAll('li')[0];
+    list.replaceChild(newListItem, itemToReplace); */
+
+
+
+
+
+    /* function hi(num1, num2){
+      //document.getElementById('text').innerHTML = 'My name is ' + name;
+      return num1 + num2;
+    }
+
+    var sum = hi(12, 52);
+    console.log(sum);*/
+
+    /* var anonymousFunction = function() {
+    } 
+
+    ou
+
+    var anonymousFunction = () => {
+    }*/
+
+
+
+
+
+    /* var textElement = document.querySelector('p');
+    var changeFontSize = (e) =>{
+
+      document.getElementById('text').innerHTML = e.clientX;
+    }
+
+    textElement.addEventListener('mouseover', changeFontSize); */
+
+
+var parentVal = document.getElementById('parent').value;
+var requiredVal = document.getElementById('required').value;
+var result = document.getElementById('result');
+
+var calculate = () => {
+    if(!parentVal | !requiredVal){
+        alert('Please fill all fields')
+    } else {
+        alert
+    } result.innerHTML = requiredVal / parentVal;
+}
+
+var btn = document.querySelector('button');
+btn.addEventListener('click', calculate);
