@@ -40,7 +40,7 @@ p{
     max-height: 307px;
 }
 
-.button-email {
+#buttonEmail {
     padding: 5px 1px;
     margin: 0px 5px;
     font-size: 1em;
@@ -58,13 +58,13 @@ p{
     width: 100%;
 }
 
-.button-email:hover{
+#buttonEmail:hover{
     outline:none;
     border-color:#e2e9ee;
     box-shadow:0 0 10px #e2e9ee;
 }
   
-.button-email:active{
+#buttonEmail:active{
     background-color: #3e8e41;
     box-shadow: 0 5px rgba(26, 26, 26, 0.5);
     transform: translateY(2px);
@@ -72,8 +72,7 @@ p{
 
 
 /* Copy style */
-
-  .button-email .tooltiptext {
+#buttonEmail .tooltiptext {
     visibility: hidden;
     width: 140px;
     background-color: #555;
@@ -88,9 +87,9 @@ p{
     margin-left: -75px;
     opacity: 0;
     transition: opacity 0.3s;
-  }
+}
   
-  .button-email .tooltiptext::after {
+#buttonEmail .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -99,16 +98,19 @@ p{
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
-  }
+}
   
-  .button-email:hover .tooltiptext {
+#buttonEmail:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-  }
+}
 
-    #email {
-        display: inline-block;
-  }
+#email {
+    display: inline-block;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
 
 .button-social {
     margin-top: 5px;

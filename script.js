@@ -33,6 +33,8 @@ function searchFunction() {
 let copyBtn = document.getElementById('buttonEmail');
 copyBtn.addEventListener('click', copyText);
 
+var tooltip = document.getElementById("myTooltip");
+
 function copyText(){
   let div = document.getElementById('email');
   let text = div.innerText;
@@ -43,12 +45,15 @@ function copyText(){
   textArea.value = text;
   document.body.append(textArea);
   textArea.select();
-  document.execCommand('copy');   //No i18n
+  document.execCommand('copy');  
   document.body.removeChild(textArea);
-
-  var tooltip = document.getElementById("myTooltip");
   tooltip.innerHTML = "Copied";
 }
+
+function outFunc() {
+    tooltip.innerHTML = "For hiring";
+}
+
 
 // Instagram link
 function Open() {
