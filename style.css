@@ -1,5 +1,5 @@
 body{
-    font-family: 'Raleway';
+    font-family: 'Raleway Thin';
     margin: 0px;
     background-color: rgb(0, 0, 0);
 }
@@ -11,12 +11,10 @@ p{
     margin-left: 5px;
     margin-bottom: 10px;
     margin-top: 5px;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     color: aliceblue;
     text-align: justify;
 }
-
-
 
 .menu{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 160, 8, 0.2), #038d00);
@@ -25,7 +23,7 @@ p{
     width: 100%;
     bottom: 0px;
     right: 0;
-    grid-template-columns: 25% 1fr 25%;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
 }
 
 .box-footer{
@@ -33,17 +31,19 @@ p{
     margin-bottom: 0.8rem;
 }
 
-div.logo img{
+.logo img{
     object-fit: fill;
     margin: auto;
     width: 100%;
     height: 100%;
+    max-width: 472px;
+    max-height: 307px;
 }
 
 .button-email {
     padding: 5px 1px;
     margin: 0px 5px;
-    font-size: 30px;
+    font-size: 1em;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -69,6 +69,46 @@ div.logo img{
     box-shadow: 0 5px rgba(26, 26, 26, 0.5);
     transform: translateY(2px);
 }
+
+
+/* Copy style */
+
+  .button-email .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .button-email .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .button-email:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+    #email {
+        display: inline-block;
+  }
 
 .button-social {
     margin-top: 5px;
@@ -105,10 +145,9 @@ div.logo img{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    z-index: 1;
 }
 
-.video-container .video{
+.video-container .video-wrapper{
     height: 30rem;
     width: 50rem;
     margin: 2rem;
@@ -122,17 +161,16 @@ div.logo img{
     border-width: 2px;
 }
 
-.video-container .video video{
+.video-container .video-wrapper video{
     height: 100%;
     width: 100%;
-    object-fit: cover;
     outline:none;
     cursor: pointer;
+    object-fit: cover;
 }
 
 
-
-.video-container .video .active{
+.video-container .video-wrapper .active{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -143,10 +181,11 @@ div.logo img{
     z-index: 2;
 }
 
-.video-container .video .active:hover{
+.video-container .video-wrapper .active:hover{
     transition: none;
     transform: translate(-50%, -50%) scale(1);
 }
+
 
 .wrapper-credit {
     display: flex;
@@ -167,14 +206,14 @@ div.logo img{
 input {
     position: relative;
     left: 30%;
-    width: 400px;
+    width: 250px;
     height: 60px;
     margin: 12px 0;
     border: 0;
     border-radius: 25px;
     outline: 0;
     box-sizing: border-box;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 400;
     text-align: justify;
     padding: 15px;
@@ -193,8 +232,7 @@ input {
     }
 
     p{
-        text-align: center;
-        text-justify: auto;
+        font-size: small;
     }
 
     .box-footer {
@@ -203,10 +241,11 @@ input {
 
     .button-email{
         width: 100%;
+        font-size: 15px;
     }
 }
 
-@media (min-width: 50em) {
+/* @media (min-width: 50rem) {
     .menu {
         grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
     }
@@ -231,7 +270,7 @@ input {
     }
 }
 
-@media (min-width: 65em) {
+@media (min-width: 65rem) {
     .menu {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
@@ -248,19 +287,33 @@ input {
     .button-email{
         width: 100%;
     }
+} */
+
+@media (min-width: 890px) and (max-width: 1342px) {
+    .menu {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .box-footer {
+        grid-column: 2/3;
+    }
+
+    .wrapper-credit {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em ;
+    }
 }
 
-
-
-@media (min-width: 85em) {
+@media (min-width: 85rem) {
     .menu {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
     p{
-        text-align: center;
-        text-justify: auto;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .box-footer {

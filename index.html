@@ -8,15 +8,23 @@
 <body> 
 
     <div class="video-container">
-        <div class="video">
-            <video src="videos/video1.mp4" muted></video>
+        <div class="video-wrapper">
+            <video src="videos/video1.mp4"></video>
             <div class="wrapper-credit">
                     <div class="left-side">LIMBO</div>
                     <div class="right-side" style="color: #038d00;">cinematography</div>
             </div>  
         </div>
+
+        <div class ="video-wrapper">
+            <iframe src="https://player.vimeo.com/video/459533585?title=0&byline=0&portrait=0" style="position:relative;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <div class="wrapper-credit">
+                <div class="left-side">LIMBO</div>
+                <div class="right-side" style="color: #038d00;">cinematography</div>
+            </div> 
+        </div>
         
-        <div class="video">
+        <div class="video-wrapper">
             <video src="videos/video2.mp4" muted></video>
             <div class="wrapper-credit">
                 <div class="left-side">American Airlines - Carnaval 2020</div>
@@ -24,7 +32,7 @@
         </div>
         </div>
 
-        <div class="video">
+        <div class="video-wrapper">
             <video src="videos/video3.mp4" muted></video>
             <div class="wrapper-credit">
                 <div class="left-side">C&A Dia dos Namorados 2019</div>
@@ -32,7 +40,7 @@
         </div>
         </div>
 
-        <div class="video">
+        <div class="video-wrapper">
             <video src="videos/video4.mp4" muted></video>
             <div class="wrapper-credit">
                 <div class="left-side">Santa Lolla 2020</div>
@@ -40,7 +48,7 @@
         </div>
         </div>
 
-        <div class="video">
+        <div class="video-wrapper">
             <video src="videos/video5.mp4" muted></video>
             <div class="wrapper-credit">
                 <div class="left-side">NANDO REIS - ESPERA PRIMAVERA</div>
@@ -48,7 +56,7 @@
         </div>
         </div>
 
-        <div class="video">
+        <div class="video-wrapper">
             <video src="videos/video6.mp4" muted></video>
             <div class="wrapper-credit">
                 <div class="left-side">C&A - Dia dos pais 2019</div>
@@ -62,9 +70,10 @@
             <div class="logo">
                 <img src="logo-mlkbrutal-op.png" alt="logo Muleque Brutal">
             </div>  
-                <div class="button-email">vinicius@mlkbrutal.com
+                <div class="button-email" id="buttonEmail"> <span class="tooltiptext" id="myTooltip">Me contrata</span>
+                <div id="email">vinicius@mlkbrutal.com</div>
                 </div>
-                <div class="button-social"></div>
+                <div class="button-social" onclick="Open()"></div>
                 <p>Director, Cinematographer
                 <br>
                 São Paulo, BRASIL
