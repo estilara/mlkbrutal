@@ -125,11 +125,11 @@ p{
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    border-radius: 25px;
+    border-radius: 40px;
     background: url(/mlkbrutal/botao-ig.png) no-repeat center;
     background-size: cover;
     width: 15%;
-    height: 35px;
+    height: 70px;
 }
 
 .button-social:hover{
@@ -231,13 +231,13 @@ input {
     width: 100%;
 }
 
-@media (min-width: 460px) {
+/*@media (min-width: 460px) {
 
     .box-footer {
         max-width: 370px;
     }
 
-}
+}/*
 
     
 
@@ -322,6 +322,39 @@ input {
     }
 }
  */
+@media (min-width: 1000px) {
+    p{
+        font-size: 1rem;
+    }
+
+    .box-footer {
+        max-width: 271px;
+    }
+
+    #buttonEmail{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #email {
+        font-size: 0.9em;
+    }
+
+    .button-social{
+        height: 40px;
+    }
+
+    input{
+        font-size: 16px;
+        width: 250px;
+        height: 30px;
+    }
+
+    .wrapper-credit {
+        font-size: 16px;
+    }
+}
+
 @media (min-width: 85rem) {
 
     p{
